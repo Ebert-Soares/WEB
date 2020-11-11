@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html> 
+
+<style>
+  body{  
+  background-color: black;  
+}
+
+  #img-div{
+    background-color: white;
+    width: 100vw;
+    height: 300px;
+   
+  }
+  #image{
+    display: block;
+    margin-left: auto;
+    margin-right: auto; 
+    padding: 41px; 
+    max-width: 500px;; 
+    height: auto; 
+
+  }
+  #title{ 
+    color: white;
+    text-align: center;
+    padding: 3vw;
+    font-size: 60px;    
+}  
+  #img-caption{
+   color: white; 
+   text-align: center;
+  }   
+  #tribute-info{
+    color: white;
+    text-align: center;
+    font-family: serif;
+    padding: 5vw;
+    font-size: 30px;
+  }
+
+    #h2bio{ 
+    color: white;
+    text-align: center;
+    font-size: 40px;  
+    padding-top: 50px;
+} 
+
+     #h2albuns{ 
+    color: white;
+    font-size: 40px;  
+    padding-top: 50px;
+} 
+    #tribute-link{
+    text-decoration: none;
+  }
+  #tribute-link:hover{
+    color: red;
+    text-decoration: underline;
+  }
+   #album1{
+   color: white; 
+   text-align: left;
+  } 
+  #album1img{
+   position: relative; 
+   margin: 60px ;
+   top: 30px;
+   max-width: 300px;
+   max-height: 300px;
+  }
+   #album2{
+   color: white; 
+   position:relative;
+   left: 5vw;  
+    
+  } 
+  #album2img{
+   position: relative; 
+    margin: 60px ;
+   top: 30px;
+  }
+    #album3{
+   color: white; 
+   position:relative;
+   left: 8vw;  
+    
+  } 
+  #album3img{
+   position: relative; 
+   margin: 60px ;
+   top: 30px;
+   max-width: 300px;
+   max-height: 300px;
+  }
+  .inline-block {
+   display: inline-block;
+
+    @media screen and (max-width: 550px){
+      #image{      
+     max-width: 80%;
+     height: auto;}
+     }
+  
+  
+</style>
+<main>
+  <h1 id="title"> Syd Barrett </h1>
+  <div id="img-div"><img src="https://1.bp.blogspot.com/-rkpcvEmTU38/XwT6Hi6F2rI/AAAAAAAA1uw/Kg7f6_8MMLYbDEAr5n8dbpxm0v5GycFKgCLcBGAsYHQ/s640/11695494_791962374253336_5116750508765189998_n.jpg" alt="Syd Barret's image;" id="image"><h2 id="img-caption">This a image of Syd Barret</h2></div>
+  
+  <p id="h2bio">Biography</p>
+  
+  <p id="tribute-info">Roger Keith "Syd" Barrett (6 January 1946 – 7 July 2006) was an English singer, songwriter, and musician who co-founded the rock band Pink Floyd in 1965. Barrett named the group and was their original frontman and primary songwriter, becoming known for his English-accented singing, literary influences, and whimsical take on psychedelia. As a guitarist, he was influential for his free-form playing and for employing dissonance, distortion, echo, feedback, and other studio effects.<p>
+  <p id="tribute-info">Barrett was musically active for less than ten years. With Pink Floyd, he recorded four singles, their debut album The Piper at the Gates of Dawn (1967), portions of their second album A Saucerful of Secrets (1968), and several unreleased songs. In April 1968, Barrett was ousted from the band amid speculation of mental illness and his excessive use of psychedelic drugs. He began a brief solo career in 1969 with the single "Octopus" and followed with the albums The Madcap Laughs (1970) and Barrett (1970), recorded with the aid of several members of Pink Floyd.<p>
+  <p id="tribute-info">In 1972, Barrett left the music industry, retired from public life and strictly guarded his privacy until his death. He continued painting and dedicated himself to gardening. Pink Floyd recorded several tributes and homages to him, including the 1975 song suite "Shine On You Crazy Diamond" and the 1979 rock opera The Wall. In 1988, EMI released an album of unreleased tracks and outtakes, Opel, with Barrett's approval. He died of pancreatic cancer in 2006. If you have time, you should read more about him on <a id="tribute-link" href="https://en.wikipedia.org/wiki/Syd_Barrett" target="_blank">his Wikipedia entry</a>.<p>
+  
+  <p id="h2albuns">Listen to his albuns:</p>
+  <div></div>
+  <div class="inline-block"><a href= "https://www.youtube.com/watch?v=Hl1-55Jz3Po" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/en/3/3c/PinkFloyd-album-piperatthegatesofdawn_300.jpg" alt="The Piper at the Gates of Down" id="album1img" </img></a><h2 id="album1">The Piper at the Gates of Down (1967)</h2></div>
+  
+   <div class="inline-block"><a href= "https://www.youtube.com/watch?v=fcFrivOpCwc&list=PLn_HrLivU4eraqCFUNlxVj_V2BmVXiLBe" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/en/5/54/Saucerful_of_secrets2.jpg" alt="Saucerfoul of Secrets" id="album2img" </img></a>
+<h2 id="album2">     A Saucerful of Secrets (1968)</h2></div>
+  
+  <div class="inline-block"><a href= "https://www.youtube.com/watch?v=VaGRtH7h4oA&list=PLEF4C8F67FF2779B1" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/pt/b/be/The_Madcaps_Laught_-_Syd_Barrett_-_1970.jpg" alt="Saucerfoul of Secrets" id="album3img" </img></a>
+<h2 id="album3">   The Madcap Laughs (1970)</h2></div>
+   
+  <div><a href= "https://www.youtube.com/watch?v=eNgxNxkUQF0&list=PL8a8cutYP7fqz4zWadeZ5EuERSi-eBTE6" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/en/0/00/Sydbarrett-barrett.jpg" alt="Saucerfoul of Secrets" id="album3img" </img></a>
+<h2 id="album3">   Barrett (1970)</h2></div>
+  
+  </main>
+
+
+</html>
+
+
