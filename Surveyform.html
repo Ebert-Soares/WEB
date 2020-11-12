@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<style>
+
+  body{
+    background-image: linear-gradient(to right, #191970, #6A5ACD);
+    text-align: center;
+  }
+
+  #title{
+    color: white;
+    text-align: center;
+    margin-top: 3vw;
+    font-size: 50px;
+  }
+  #description{
+    color: white;
+    text-align: center;
+    font-size: 30px;
+  }
+
+  #survey-form{
+    backgound-color: #363636
+    border-radius: 20px;
+    color: white;
+    margin-top: 5vw;
+    position: relative;
+    text-align: center;
+  }
+  #name{
+    color: black;
+  }
+  #name-label{
+    color: white;
+    font-size: 40px;
+
+  }
+  #email-label{
+    color: white;
+    font-size: 40px;
+
+  }
+  #email{
+    color: black;
+  }
+  #number-label{
+    color: white;
+    font-size: 40px;
+
+    }
+  #number{
+    color: black;
+  }
+  #drop-text{
+    color: white;
+    font-size: 40px;
+  }
+  #dropdown{
+    text-align: center;
+  }
+  #radio{
+    font-size: 40px;
+  }
+  #text-area{
+    color: black;
+    font-size: 40px;
+  }
+  #text-area1{
+    color: black;
+    font-size: 25px;
+  }
+    #submit{
+      color: black;
+      font-size: 40px;
+    }
+    #submit:hover{
+      color: white;
+      background-color: black;
+    }
+
+</style>
+
+<main>
+
+<h1 id="title">Survey Form</h1>
+
+<h2 id="description">Thanks for running this code</h2>
+
+<div>
+<form id="survey-form">
+  <label for="name" id="name-label">Name</label><br>
+  <input style="height:3vw; width:60vw; font-size: 25px; text-align: center;" placeholder="Enter your name" type="text" id="name" name="name" required><br><br>
+
+  <label for="email" id="email-label">Email</label><br>
+  <input style="height:3vw; width:60vw; font-size: 25px; text-align: center;" placeholder="Enter your email" type="email" id="email" name="email" required><br><br>
+
+  <label for="number" id="number-label">Telephone number</label><br>
+  <input style="height:3vw; width:60vw; font-size: 25px; text-align: center;"  placeholder="Enter your telephone number" type="number" id="number" name="number" required><br>
+
+  <div id="dropdown">
+    <p id="drop-text">Which is right?</p>
+        <select style="height:3vw; width:60vw;" id="dropdown">
+          <option value="larem" id="text-area1">Larem ipsuum</option>
+          <option value="ipsao" id="text-area1" >Lorem ipsao</option>
+          <option value="right" id="text-area1" >Lorem ipsum</option>
+          <option value="laurem" id="text-area1" >Laurem Ipsuma </option>
+        </select><br><br>
+        <label id="radio">Sexual orientation<br>
+          <input type="radio" name="sexual" >Straigth<br>
+          <input type="radio" name="sexual" >Homo
+        </label><br> <br>
+
+        <label id="radio">Will you hire me?<br>
+          <input type="checkbox" value="yesc" name="whycourse" >Yes, of course<br>
+          <input type="checkbox" value="yesw" name="whycourse" >Yes, why not?
+        </label><br><br>
+
+        <label for="textarea" id="number-label">Any sugestions?</label><br><br>
+        <textarea id="text-area" name="textarea" rows="4" cols="50">Write them here</textarea><br><br>
+
+        <input type="submit" value="Submit" id="submit">
+
+
+</form>
+
+</div>
+
+</main>
+
+</html>
