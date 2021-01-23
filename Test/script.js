@@ -91,3 +91,7 @@ for(var x = 0; x < tipsM.tip.length ; x++){
 //Comparation
 
 valorAvg > valorAvgM? console.log('Default has more ' + valorAvg):console.log('Mark has more ' + valorAvgM);
+
+
+
+
