@@ -1,5 +1,4 @@
 
-
 var scores, roundScore, activePlayer;
 var dice;
 
@@ -30,10 +29,11 @@ if(dice > 1){
   document.getElementById('current--' + activePlayer).textContent = roundScore;
   document.querySelector('.dice').style.display = 'block';
 
-
 } else {
 
   document.getElementById('current--' + activePlayer).textContent = 0;
+  document.getElementById('score--' + activePlayer).textContent = 0;
+  scores[activePlayer] = 0;
   document.querySelector('.player--' + activePlayer).classList.remove('player--active');
   activePlayer === 0? activePlayer = 1 : activePlayer = 0;
   roundScore = 0;
@@ -61,3 +61,4 @@ document.querySelector('.btn--hold').addEventListener('click', function(){
   document.querySelector('.dice').style.display = 'none';
 
 });
+
