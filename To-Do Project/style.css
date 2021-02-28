@@ -1,0 +1,15 @@
+html{
+  background-color: black;
+}
+
+
+#h1{
+text-align: center;
+color: white;
+}
+
+#retangle{
+width: 10vw;
+height: 2vw;
+background-color: white;
+}
