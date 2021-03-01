@@ -18,47 +18,50 @@ font-size: 1.3rem;
 
 
 #retangle1{
-  background-color: white;
+  background-color: black;
+  margin-left: 10vw;
+  margin-top: 8vh;
+  width: 10vw;
+  height: 2vw;
+  word-break: break-all;
+
+}
+#retangle2{
+  background-color: black;
   margin-left: 10vw;
   margin-top: 8vh;
   width: 10vw;
   height: 2vw;
   word-break: break-all;
 }
-#retangle2{
-  background-color: white;
-  margin-left: 10vw;
-  margin-top: 8vh;
-  width: 10vw;
-  height: 2vw;
-}
 #retangle3{
-  background-color: white;
+  background-color: black;
   margin-left: 10vw;
   margin-top: 8vh;
   width: 10vw;
   height: 2vw;
 }
 #retangle4{
-  background-color: white;
+  background-color: black;
   margin-left: 10vw;
   margin-top: 8vh;
   width: 10vw;
   height: 2vw;
 }
 #retangle5{
-  background-color: white;
+  background-color: black;
   margin-left: 10vw;
   margin-top: 8vh;
   width: 10vw;
   height: 2vw;
 }
 #retangle6{
-  background-color: white;
+  background-color: black;
   margin-left: 10vw;
   margin-top: 8vh;
   width: 10vw;
   height: 2vw;
+
 }
 
 /*todo: create beatiful borders uWu*/
