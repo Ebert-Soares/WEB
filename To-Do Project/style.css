@@ -24,7 +24,8 @@ font-size: 1.3rem;
   width: 10vw;
   height: 2vw;
   word-break: break-all;
-
+  border-radius: 1vw;
+  text-align: center;
 }
 #retangle2{
   background-color: black;
@@ -33,6 +34,8 @@ font-size: 1.3rem;
   width: 10vw;
   height: 2vw;
   word-break: break-all;
+  border-radius: 1vw;
+  text-align: center;
 }
 #retangle3{
   background-color: black;
@@ -40,6 +43,9 @@ font-size: 1.3rem;
   margin-top: 8vh;
   width: 10vw;
   height: 2vw;
+  border: 2px;
+  border-radius: 1vw;
+  text-align: center;
 }
 #retangle4{
   background-color: black;
@@ -47,6 +53,9 @@ font-size: 1.3rem;
   margin-top: 8vh;
   width: 10vw;
   height: 2vw;
+  border: 2px;
+  border-radius: 1vw;
+  text-align: center;
 }
 #retangle5{
   background-color: black;
@@ -54,6 +63,9 @@ font-size: 1.3rem;
   margin-top: 8vh;
   width: 10vw;
   height: 2vw;
+  border: 2px;
+  border-radius: 1vw;
+  text-align: center;
 }
 #retangle6{
   background-color: black;
@@ -61,7 +73,9 @@ font-size: 1.3rem;
   margin-top: 8vh;
   width: 10vw;
   height: 2vw;
-
+  border: 2px;
+  border-radius: 1vw;
+  text-align: center;
 }
 
-/*todo: create beatiful borders uWu*/
+/*todo: change da text font*/
