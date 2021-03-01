@@ -79,5 +79,4 @@ else if(newtask.length<20 && newtask.length>0){
 
 
 //todo: make the divs draggable
-//todo: when you double click, it should open a write menu
 //todo: add good quotes when the user drops the div on the coloured square
