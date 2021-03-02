@@ -29,6 +29,8 @@ else{
 }
 
 
+
+
 function doubleClick(retangle){
 
 
@@ -47,6 +49,11 @@ else if(newtask.length<20 && newtask.length>0){
     document.getElementById('retangle' + retangle).textContent = ' ' + newtask;
 
 }}
+
+function drag(x){
+
+    new Draggabilly('#retangle' + x, {});
+}
 
 
 
