@@ -3,6 +3,7 @@ var task;
 var retangleNumber = 0;
 var rewrite;
 var newtask;
+var positionx, positiony;
 
 alert(window.screen.availHeight );
 alert(window.screen.availWidth);
@@ -55,23 +56,55 @@ else if(newtask.length<20 && newtask.length>0){
 
 function drag(number){
 
+//  alert("aaaaa");
 
 
-var draggie = new Draggabilly('#retangle' + number, {
-});
+var draggie = new Draggabilly('#retangle' + number, {});
+//alert("aaaaa"); work
 draggie.on( 'dragMove', function(){
-  console.log(this.position.x + ',' + this.position.y);
-  //if(number = 1 && this.position.x > (38/100)*window.screen.availWidth) {
-  //  alert(x);
+//alert(this.position.x);
+var positionx = this.position.x;
+//alert(positionx);
+
+var positiony = this.position.y;
+marcos(positionx, positiony, 1)
+
+
+
+})
+//  console.log(this.position.x + ',' + this.position.y);
+
+//  if (this.position.x >= (52/100)*window.screen.availWidth) {
+//    if (this.position.y >= (1/100)*window.screen.availHeight && this.position.y <= (25/100)*window.screen.availHeight){
+//      alert('Based! Completed!')
+//    }
+//  }
+
+;
+
+
+
+}
+function marcos(positionx, positiony, number){
+switch(number){
+case 1:
   if (this.position.x >= (52/100)*window.screen.availWidth) {
-    if (this.position.y >= (20/100)*window.screen.availHeight && this.position.y <= (44/100)*window.screen.availHeight)
+    if (this.position.y >= (1/100)*window.screen.availHeight && this.position.y <= (25/100)*window.screen.availHeight){
+      alert('Based! Completed!')
+    }
   }
-} );
+  break;
+
+case 2:
+
+case xxx:
+
 
 
 
 }
 
+}
 
 
 
