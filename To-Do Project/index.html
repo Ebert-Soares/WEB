@@ -4,7 +4,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 <link rel="stylesheet" href="style.css"/>
 <script src="script.js" ></script>
-<script src='https://cdnjs.cloudflare.com/ajax/libs/dragula/$VERSION/dragula.min.js'></script>
+<script src="https://unpkg.com/draggabilly@2/dist/draggabilly.pkgd.min.js"></script>
 
 
 <main>
@@ -14,12 +14,12 @@
 
 <body>
 <button id="button" onclick="createTask()">Create a New Task</button>
-<div id="retangle1"></div>
-<div id="retangle2"></div>
-<div id="retangle3"></div>
-<div id="retangle4"></div>
-<div id="retangle5"></div>
-<div id="retangle6"></div>
+<div id="retangle1"  onclick="new Draggabilly( '#retangle1', {});" ondblclick ="doubleClick(1)"></div>
+<div id="retangle2" ondblclick ="doubleClick(2)"></div>
+<div id="retangle3" ondblclick ="doubleClick(3)"></div>
+<div id="retangle4" ondblclick ="doubleClick(4)"></div>
+<div id="retangle5" ondblclick ="doubleClick(5)"></div>
+<div id="retangle6" ondblclick ="doubleClick(6)"></div>
 
 <div id="completed"></div>
 <div id="delayed"></div>
