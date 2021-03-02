@@ -5,8 +5,6 @@ var rewrite;
 var newtask;
 var positionx, positiony;
 
-alert(window.screen.availHeight );
-alert(window.screen.availWidth);
 
 function createTask(){
 retangleNumber+=1;
@@ -14,12 +12,14 @@ var task = prompt("Digite a sua task: (maximum of 60 characters)");
 
 if(task.length<60 && task.length>20){
 document.getElementById('retangle' + retangleNumber).style.backgroundColor = 'white';
+document.getElementById('retangle' + retangleNumber).style.opacity = 1.0;
 document.getElementById('retangle' + retangleNumber).style.border = '2px solid grey';
 document.getElementById('retangle' + retangleNumber).style.height =  1 + Math.round(task.length/20) + 'rem';
 document.getElementById('retangle' + retangleNumber).textContent = ' ' + task ;}
 
 else if(task.length<20 && task.length>0){
     document.getElementById('retangle' + retangleNumber).style.backgroundColor = 'white';
+    document.getElementById('retangle' + retangleNumber).style.opacity = 1.0;
     document.getElementById('retangle' + retangleNumber).style.height =   2 +'rem';
     document.getElementById('retangle' + retangleNumber).textContent = ' ' + task
     document.getElementById('retangle' + retangleNumber).style.border = '2px solid grey';
@@ -67,7 +67,7 @@ var positionx = this.position.x;
 //alert(positionx);
 
 var positiony = this.position.y;
-marcos(positionx, positiony, 1)
+marcos(positionx, positiony, number)
 
 
 
@@ -88,53 +88,78 @@ marcos(positionx, positiony, 1)
 function marcos(positionx, positiony, number){
 switch(number){
 case 1:
-  if (positionx >= (55/100)*window.screen.availWidth) {
+  if (positionx >= (65/100)*window.screen.availWidth) {
     if (positiony >= (1/100)*window.screen.availHeight && positiony <= (25/100)*window.screen.availHeight){
       alert('Based! Completed!')  }
     else  if (positiony >= (29/100)*window.screen.availHeight && positiony <= (55/100)*window.screen.availHeight){
-        alert('Based! Completed!')
+        alert('Not based')
       }
-    else  if (positiony >= (1/100)*window.screen.availHeight && positiony <= (25/100)*window.screen.availHeight){
-        alert('Based! Completed!')
+    else  if (positiony >= (58/100)*window.screen.availHeight && positiony <= (85/100)*window.screen.availHeight){
+        alert('cringe')
       }
   }
   break;
 
 case 2:
-    if (positionx >= (55/100)*window.screen.availWidth) {
-      if (positiony >= (1/100)*window.screen.availHeight && positiony <= (25/100)*window.screen.availHeight){
-        alert('Based! Completed!')
-      }
+    if (positionx >= (65/100)*window.screen.availWidth) {
+      if (positiony >= (-12/100)*window.screen.availHeight && positiony <= (14/100)*window.screen.availHeight){
+        alert('Based! Completed!')  }
+      else  if (positiony >= (20/100)*window.screen.availHeight && positiony <= (46/100)*window.screen.availHeight){
+          alert('Not based')
+        }
+      else  if (positiony >= (48/100)*window.screen.availHeight && positiony <= (74/100)*window.screen.availHeight){
+          alert('cringe')
+        }
     }
     break;
 
 case 3:
       if (positionx >= (55/100)*window.screen.availWidth) {
         if (positiony >= (1/100)*window.screen.availHeight && positiony <= (25/100)*window.screen.availHeight){
-          alert('Based! Completed!')
-        }
+          alert('Based! Completed!')  }
+        else  if (positiony >= (29/100)*window.screen.availHeight && positiony <= (55/100)*window.screen.availHeight){
+            alert('Not based')
+          }
+        else  if (positiony >= (58/100)*window.screen.availHeight && positiony <= (85/100)*window.screen.availHeight){
+            alert('cringe')
+          }
       }
       break;
 
 case 4:
             if (positionx >= (55/100)*window.screen.availWidth) {
               if (positiony >= (1/100)*window.screen.availHeight && positiony <= (25/100)*window.screen.availHeight){
-                alert('Based! Completed!')
-              }
+                alert('Based! Completed!')  }
+              else  if (positiony >= (29/100)*window.screen.availHeight && positiony <= (55/100)*window.screen.availHeight){
+                  alert('Not based')
+                }
+              else  if (positiony >= (58/100)*window.screen.availHeight && positiony <= (85/100)*window.screen.availHeight){
+                  alert('cringe')
+                }
             }
             break;
 case 5:
             if (positionx >= (55/100)*window.screen.availWidth) {
               if (positiony >= (1/100)*window.screen.availHeight && positiony <= (25/100)*window.screen.availHeight){
-                  alert('Based! Completed!')
-                    }
+                alert('Based! Completed!')  }
+              else  if (positiony >= (29/100)*window.screen.availHeight && positiony <= (55/100)*window.screen.availHeight){
+                  alert('Not based')
+                }
+              else  if (positiony >= (58/100)*window.screen.availHeight && positiony <= (85/100)*window.screen.availHeight){
+                  alert('cringe')
+                }
                   }
                   break;
 case 6:
               if (positionx >= (55/100)*window.screen.availWidth) {
                 if (positiony >= (1/100)*window.screen.availHeight && positiony <= (25/100)*window.screen.availHeight){
-                  alert('Based! Completed!')
-                          }
+                  alert('Based! Completed!')  }
+                else  if (positiony >= (29/100)*window.screen.availHeight && positiony <= (55/100)*window.screen.availHeight){
+                    alert('Not based')
+                  }
+                else  if (positiony >= (58/100)*window.screen.availHeight && positiony <= (85/100)*window.screen.availHeight){
+                    alert('cringe')
+                  }
                         }
                         break;
 
@@ -164,6 +189,7 @@ function noncompleted(){
 }
 
 
-
+//todo: dont let the divs get out from the page
 //todo: make the divs draggable
 //todo: add good quotes when the user drops the div on the coloured square
+//todo: (maybe) make a system better than onclick :)
