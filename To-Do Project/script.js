@@ -88,19 +88,55 @@ marcos(positionx, positiony, 1)
 function marcos(positionx, positiony, number){
 switch(number){
 case 1:
-  if (this.position.x >= (52/100)*window.screen.availWidth) {
-    if (this.position.y >= (1/100)*window.screen.availHeight && this.position.y <= (25/100)*window.screen.availHeight){
-      alert('Based! Completed!')
-    }
+  if (positionx >= (55/100)*window.screen.availWidth) {
+    if (positiony >= (1/100)*window.screen.availHeight && positiony <= (25/100)*window.screen.availHeight){
+      alert('Based! Completed!')  }
+    else  if (positiony >= (29/100)*window.screen.availHeight && positiony <= (55/100)*window.screen.availHeight){
+        alert('Based! Completed!')
+      }
+    else  if (positiony >= (1/100)*window.screen.availHeight && positiony <= (25/100)*window.screen.availHeight){
+        alert('Based! Completed!')
+      }
   }
   break;
 
 case 2:
+    if (positionx >= (55/100)*window.screen.availWidth) {
+      if (positiony >= (1/100)*window.screen.availHeight && positiony <= (25/100)*window.screen.availHeight){
+        alert('Based! Completed!')
+      }
+    }
+    break;
 
-case xxx:
+case 3:
+      if (positionx >= (55/100)*window.screen.availWidth) {
+        if (positiony >= (1/100)*window.screen.availHeight && positiony <= (25/100)*window.screen.availHeight){
+          alert('Based! Completed!')
+        }
+      }
+      break;
 
-
-
+case 4:
+            if (positionx >= (55/100)*window.screen.availWidth) {
+              if (positiony >= (1/100)*window.screen.availHeight && positiony <= (25/100)*window.screen.availHeight){
+                alert('Based! Completed!')
+              }
+            }
+            break;
+case 5:
+            if (positionx >= (55/100)*window.screen.availWidth) {
+              if (positiony >= (1/100)*window.screen.availHeight && positiony <= (25/100)*window.screen.availHeight){
+                  alert('Based! Completed!')
+                    }
+                  }
+                  break;
+case 6:
+              if (positionx >= (55/100)*window.screen.availWidth) {
+                if (positiony >= (1/100)*window.screen.availHeight && positiony <= (25/100)*window.screen.availHeight){
+                  alert('Based! Completed!')
+                          }
+                        }
+                        break;
 
 }
 
