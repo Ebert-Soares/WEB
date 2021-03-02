@@ -28,26 +28,26 @@ else{
 
 //doubleclick callings
 document.getElementById("retangle1").addEventListener("dblclick", function(){
-  doubleclick(1);
+  doubleclick(1, 1);
 }, false);
 
-document.getElementById("retangle2").addEventListener("dblclick", function(){
-  doubleclick(2);
+document.getElementById("retangle2").addEventListener("dblclick", function1(){
+  doubleclick(1, 2);
 });
 
-document.getElementById("retangle3").addEventListener("dblclick", function(){
-  doubleclick(3);
+document.getElementById("retangle3").addEventListener("dblclick", function2(){
+  doubleclick(1, 3);
 });
 
-document.getElementById("retangle4").addEventListener("dblclick", function(){
-  doubleclick(4);
+document.getElementById("retangle4").addEventListener("dblclick", function3(){
+  doubleclick(1, 4);
 });
 
-document.getElementById("retangle5").addEventListener("dblclick", function(){
+document.getElementById("retangle5").addEventListener("dblclick", function4(){
   doubleclick(5);
 });
 
-document.getElementById("retangle6").addEventListener("dblclick", function(){
+document.getElementById("retangle6").addEventListener("dblclick", function5(){
   doubleclick(6);
 });
 
@@ -56,24 +56,22 @@ document.getElementById("retangle6").addEventListener("dblclick", function(){
 
 
 
-function doubleclick(rewrite){
+function doubleclick(rewrite, retangle){
 
-var newtask = prompt("Digite a sua task: (maximum of 60 characters)");
-
+var newtask = window.prompt("Digite a sua task: (maximum of 60 characters)", document.getElementById('retangle' + retangle).textContent);
+;
 
 if(newtask.length<60 && newtask.length>20){
 
-document.getElementById('retangle' + rewrite).style.height =  1 + Math.round(newtask.length/20) + 'rem';
-document.getElementById('retangle' + rewrite).textContent = ' ' + newtask ;}
+document.getElementById('retangle' + retangle).style.height =  1 + Math.round(newtask.length/20) + 'rem';
+document.getElementById('retangle' + retangle).textContent = ' ' + newtask ;}
 
 else if(newtask.length<20 && newtask.length>0){
 
-    document.getElementById('retangle' + rewrite).style.height =   2 +'rem';
-    document.getElementById('retangle' + rewrite).textContent = ' ' + newtask;
+    document.getElementById('retangle' + retangle).style.height =   2 +'rem';
+    document.getElementById('retangle' + retangle).textContent = ' ' + newtask;
 
 }}
-
-
 
 
 
