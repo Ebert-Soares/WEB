@@ -167,6 +167,12 @@ case 6:
 
 }
 
+function mailalert(){
+  alert('My Email: ebert5245@gmail.com');
+}
+function chamanozap(){
+  alert('Call me or send a message on Whatsapp: +5537988516327');
+}
 
 
 
