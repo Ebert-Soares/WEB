@@ -6,6 +6,8 @@ var newtask;
 var positionx, positiony;
 
 
+alert('It had long since come to my attention that people of accomplishment rarely sat back and let things happen to them. They went out and happened to things. - Leonardo da Vinci﻿');
+
 
 function createTask(){
 if(retangleNumber == 6){
@@ -60,31 +62,14 @@ else if(newtask.length<20 && newtask.length>0){
 
 function drag(number){
 
-//  alert("aaaaa");
-
 
 var draggie = new Draggabilly('#retangle' + number, {});
-//alert("aaaaa"); work
 draggie.on( 'dragMove', function(){
-//alert(this.position.x);
 var positionx = this.position.x;
-//alert(positionx);
-
 var positiony = this.position.y;
-marcos(positionx, positiony, number)
+marcos(positionx, positiony, number);
 
-
-
-})
-//  console.log(this.position.x + ',' + this.position.y);
-
-//  if (this.position.x >= (52/100)*window.screen.availWidth) {
-//    if (this.position.y >= (1/100)*window.screen.availHeight && this.position.y <= (25/100)*window.screen.availHeight){
-//      alert('Based! Completed!')
-//    }
-//  }
-
-;
+});
 
 
 
@@ -201,34 +186,100 @@ function chamanozap(){
 
 
 
-//console.log(this.position.x + ', ' + window.screen.availWidth);
-//if(number = 1 && this.position.x > (38/100)*window.screen.availWidth) {
-//  alert(x);
-
-
-
-
 
 function completed(){
-var frase = Math.floor(Math.random() * 10) + 1;
 
-switch(frase){
 
-default:
-alert('gooood');
+
+switch(Math.floor(Math.random() * 10) + 1){
+
+case 1:
+windows.alert('It does not matter how slowly you go as long as you do not stop. - Confucius﻿');
 break;
 
-}
-//todo: show a messag
-}
+case 2:
+alert('It had long since come to my attention that people of accomplishment rarely sat back and let things happen to them. They went out and happened to things. - Leonardo da Vinci﻿');
+break;
+
+case 3:
+alert('The way to get started is to quit talking and begin doing. - Walt Disney');
+break;
+
+case 4:
+alert('The future depends on what you do today. - Mahatma Gandhi');
+break;
+
+case 5:
+alert('Whatever you are, be a good one. - Abraham Lincoln');
+break;
+
+case 6:
+alert('Often when you think you’re at the end of something, you’re at the beginning of something else. - Fred Rogers');
+break;
+
+case 7:
+alert('The fruit of your own hard work is the sweetest. - Deepika Padukone');
+break;
+
+case 8:
+alert('The biggest reward for a thing well done is to have done it. - Voltaire');
+break;
+
+case 9:
+alert('Before you act, listen. Before you react, think. Before you spend, earn. Before you criticize, wait. Before you quit, try. - William Arthur Ward');
+break;
+
+case 10:
+alert('A dream becomes a goal when action is taken toward its achievement. - Bo Bennett﻿');
+break;
+
+}}
 function delayed(){
   var frase = Math.floor(Math.random() * 10) + 1;
 
   switch(frase){
 
-  default:
-  alert('gooood');
-  break;
+
+    case 1:
+    alert('gooood');
+    break;
+
+    case 2:
+    alert('gooood');
+    break;
+
+    case 3:
+    alert('gooood');
+    break;
+
+    case 4:
+    alert('gooood');
+    break;
+
+    case 5:
+    alert('gooood');
+    break;
+
+    case 6:
+    alert('gooood');
+    break;
+
+    case 7:
+    alert('gooood');
+    break;
+
+    case 8:
+    alert('gooood');
+    break;
+
+    case 9:
+    alert('gooood');
+    break;
+
+    case 10:
+    alert('gooood');
+    break;
+
 }
 
 }
@@ -238,9 +289,46 @@ function noncompleted(){
 
   switch(frase){
 
-  default:
-  alert('gooood');
-  break;
+    case 1:
+    alert('gooood');
+    break;
+
+    case 2:
+    alert('gooood');
+    break;
+
+    case 3:
+    alert('gooood');
+    break;
+
+    case 4:
+    alert('gooood');
+    break;
+
+    case 5:
+    alert('gooood');
+    break;
+
+    case 6:
+    alert('gooood');
+    break;
+
+    case 7:
+    alert('gooood');
+    break;
+
+    case 8:
+    alert('gooood');
+    break;
+
+    case 9:
+    alert('gooood');
+    break;
+
+    case 10:
+    alert('gooood');
+    break;
+
 }
 }
 
