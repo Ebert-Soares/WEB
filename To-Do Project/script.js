@@ -86,13 +86,13 @@ case 1:
     else  if (positiony >= (29/100)*window.screen.availHeight && positiony <= (55/100)*window.screen.availHeight){
       document.getElementById('retangle' + number).style.marginLeft= 99999 + 'px';
         numeroSorteado = Math.floor(Math.random() * 10) + 1;
-        delayed();
+        delayed(numeroSorteado));
       }
     else  if (positiony >= (58/100)*window.screen.availHeight && positiony <= (85/100)*window.screen.availHeight){
       document.getElementById('retangle' + number).style.marginLeft= 99999 + 'px';
       alert('cringe');
       numeroSorteado = Math.floor(Math.random() * 10) + 1;
-      noncompleted();
+      noncompleted(numeroSorteado));
       }
   }
   break;
@@ -103,16 +103,16 @@ case 2:
       if (positiony >= (-18/100)*window.screen.availHeight && positiony <= (14/100)*window.screen.availHeight){
         document.getElementById('retangle' + number).style.marginLeft= 99999 + 'px';
        numeroSorteado = Math.floor(Math.random() * 10) + 1;
-        completed();  }
+        completed(numeroSorteado));  }
       else  if (positiony >= (20/100)*window.screen.availHeight && positiony <= (46/100)*window.screen.availHeight){
         document.getElementById('retangle' + number).style.marginLeft= 99999 + 'px';
         numeroSorteado = Math.floor(Math.random() * 10) + 1;
-          delayed();
+          delayed(numeroSorteado));
         }
       else  if (positiony >= (48/100)*window.screen.availHeight && positiony <= (74/100)*window.screen.availHeight){
         document.getElementById('retangle' + number).style.marginLeft= 99999 + 'px';
         numeroSorteado = Math.floor(Math.random() * 10) + 1;
-          noncompleted();
+          noncompleted(numeroSorteado));
         }
     }
     break;
@@ -122,16 +122,16 @@ case 3:
         if (positiony >= (-18/100)*window.screen.availHeight && positiony <= (8/100)*window.screen.availHeight){
           document.getElementById('retangle' + number).style.marginLeft= 99999 + 'px';
           numeroSorteado = Math.floor(Math.random() * 10) + 1;
-          completed();  }
+          completed(numeroSorteado));  }
         else  if (positiony >= (10/100)*window.screen.availHeight && positiony <= (36/100)*window.screen.availHeight){
           document.getElementById('retangle' + number).style.marginLeft= 99999 + 'px';
           numeroSorteado = Math.floor(Math.random() * 10) + 1;
-          delayed();
+          delayed(numeroSorteado));
           }
         else  if (positiony >= (38/100)*window.screen.availHeight && positiony <= (64/100)*window.screen.availHeight){
           document.getElementById('retangle' + number).style.marginLeft= 99999 + 'px';
           numeroSorteado = Math.floor(Math.random() * 10) + 1;
-          noncompleted();
+          noncompleted(numeroSorteado));
           }
       }
       break;
@@ -141,16 +141,16 @@ case 4:
               if (positiony >= (-22/100)*window.screen.availHeight && positiony <= (4/100)*window.screen.availHeight){
                 document.getElementById('retangle' + number).style.marginLeft= 99999 + 'px';
                 numeroSorteado = Math.floor(Math.random() * 10) + 1;
-                completed();  }
+                completed(numeroSorteado));  }
               else  if (positiony >= (6/100)*window.screen.availHeight && positiony <= (32/100)*window.screen.availHeight){
                 document.getElementById('retangle' + number).style.marginLeft= 99999 + 'px';
                 numeroSorteado = Math.floor(Math.random() * 10) + 1;
-                delayed();
+                delayed(numeroSorteado));
                 }
               else  if (positiony >= (34/100)*window.screen.availHeight && positiony <= (60/100)*window.screen.availHeight){
                 document.getElementById('retangle' + number).style.marginLeft= 99999 + 'px';
                 numeroSorteado = Math.floor(Math.random() * 10) + 1;
-                noncompleted();
+                noncompleted(numeroSorteado));
               }
             }
             break;
@@ -159,16 +159,16 @@ case 5:
               if (positiony >= (-30/100)*window.screen.availHeight && positiony <= (-4/100)*window.screen.availHeight){
                 document.getElementById('retangle' + number).style.marginLeft= 99999 + 'px';
                 numeroSorteado = Math.floor(Math.random() * 10) + 1;
-                completed();  }
+                completed(numeroSorteado));  }
               else  if (positiony >= (-2/100)*window.screen.availHeight && positiony <= (24/100)*window.screen.availHeight){
                 document.getElementById('retangle' + number).style.marginLeft= 99999 + 'px';
                 numeroSorteado = Math.floor(Math.random() * 10) + 1;
-                delayed();
+                delayed(numeroSorteado));
                 }
               else  if (positiony >= (26/100)*window.screen.availHeight && positiony <= (52/100)*window.screen.availHeight){
                 document.getElementById('retangle' + number).style.marginLeft= 99999 + 'px';
                 numeroSorteado = Math.floor(Math.random() * 10) + 1;
-                noncompleted();
+                noncompleted(numeroSorteado));
                 }
                   }
                   break;
@@ -177,16 +177,16 @@ case 6:
                 if (positiony >= (-38/100)*window.screen.availHeight && positiony <= (-12/100)*window.screen.availHeight){
                   document.getElementById('retangle' + number).style.marginLeft= 99999 + 'px';
                   numeroSorteado = Math.floor(Math.random() * 10) + 1;
-                  completed();  }
+                  completed(numeroSorteado));  }
                 else  if (positiony >= (-10/100)*window.screen.availHeight && positiony <= (16/100)*window.screen.availHeight){
                   document.getElementById('retangle' + number).style.marginLeft= 99999 + 'px';
                   numeroSorteado = Math.floor(Math.random() * 10) + 1;
-                  delayed();
+                  delayed(numeroSorteado));
                   }
                 else  if (positiony >= (17/100)*window.screen.availHeight && positiony <= (43/100)*window.screen.availHeight){
                   document.getElementById('retangle' + number).style.marginLeft= 99999 + 'px';
                   numeroSorteado = Math.floor(Math.random() * 10) + 1;
-                  noncompleted();
+                  noncompleted(numeroSorteado));
                   }
                         }
                         break;
@@ -260,43 +260,43 @@ function delayed(){
 
 
     case 1:
-    alert('gooood');
+    alert('Delay is preferable to error. - Thomas Jefferson');
     break;
 
     case 2:
-    alert('gooood');
+    alert('Never do today what you can put off till tomorrow. Delay may give clearer light as to what is best to be done. - Aaron Burr');
     break;
 
     case 3:
-    alert('gooood');
+    alert('Patience is bitter, but its fruit is sweet - Aristotle');
     break;
 
     case 4:
-    alert('gooood');
+    alert('The greatest remedy for anger is delay. - Seneca');
     break;
 
     case 5:
-    alert('gooood');
+    alert('One day\'s delay is another day\'s lack of progress. - Stuart Bowen');
     break;
 
     case 6:
-    alert('gooood');
+    alert('You may delay, but time will not, and lost time is never found again. - Benjamin Franklin');
     break;
 
     case 7:
-    alert('gooood');
+    alert('Delay is the deadliest form of denial. - C. Northcote Parkinson');
     break;
 
     case 8:
-    alert('gooood');
+    alert('Change your life today. Don\'t gamble on the future, act now, without delay. - Simone de Beauvoir');
     break;
 
     case 9:
-    alert('gooood');
+    alert('Delay always breeds danger. - Miguel de Cervantes');
     break;
 
     case 10:
-    alert('gooood');
+    alert('Forewarned, forearmed; to be prepared is half the victory. - Miguel de Cervantes'');
     break;
 
 }
@@ -350,9 +350,3 @@ function noncompleted(){
 
 }
 }
-
-
-//todo: dont let the divs get out from the page
-//todo: make the divs draggable
-//todo: add good quotes when the user drops the div on the coloured square
-//todo: (maybe) make a system better than onclick :)
