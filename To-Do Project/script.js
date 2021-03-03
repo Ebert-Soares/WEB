@@ -6,10 +6,10 @@ var newtask;
 var positionx, positiony;
 
 
+
 function createTask(){
 retangleNumber+=1;
 var task = prompt("Digite a sua task: (maximum of 60 characters)");
-
 if(task.length<60 && task.length>20){
 document.getElementById('retangle' + retangleNumber).style.backgroundColor = 'white';
 document.getElementById('retangle' + retangleNumber).style.opacity = 1.0;
