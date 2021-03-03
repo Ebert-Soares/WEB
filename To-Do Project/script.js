@@ -8,6 +8,10 @@ var positionx, positiony;
 
 
 function createTask(){
+if(retangleNumber == 6){
+  alert("Reached maximum capacity");
+}
+else{
 retangleNumber+=1;
 var task = prompt("Digite a sua task: (maximum of 60 characters)");
 if(task.length<60 && task.length>20){
@@ -29,7 +33,7 @@ else if(task.length<20 && task.length>0){
 else{
   alert('More than 60 characters');
 }
-
+}
 }
 
 
@@ -88,77 +92,97 @@ marcos(positionx, positiony, number)
 function marcos(positionx, positiony, number){
 switch(number){
 case 1:
-  if (positionx >= (65/100)*window.screen.availWidth) {
-    if (positiony >= (1/100)*window.screen.availHeight && positiony <= (25/100)*window.screen.availHeight){
-      alert('Based! Completed!')  }
+  if (positionx >= (40/100)*window.screen.availWidth) {
+    if (positiony >= (-3/100)*window.screen.availHeight && positiony <= (25/100)*window.screen.availHeight){
+      document.getElementById('retangle' + number).style.marginLeft= 99999 + 'px';
+      completed(); }
     else  if (positiony >= (29/100)*window.screen.availHeight && positiony <= (55/100)*window.screen.availHeight){
-        alert('Not based')
+      document.getElementById('retangle' + number).style.marginLeft= 99999 + 'px';
+        delayed();
       }
     else  if (positiony >= (58/100)*window.screen.availHeight && positiony <= (85/100)*window.screen.availHeight){
-        alert('cringe')
+      document.getElementById('retangle' + number).style.marginLeft= 99999 + 'px';
+      alert('cringe');
+      noncompleted();
       }
   }
   break;
 
 case 2:
-    if (positionx >= (65/100)*window.screen.availWidth) {
-      if (positiony >= (-12/100)*window.screen.availHeight && positiony <= (14/100)*window.screen.availHeight){
-        alert('Based! Completed!')  }
+    if (positionx >= (40/100)*window.screen.availWidth) {
+
+      if (positiony >= (-18/100)*window.screen.availHeight && positiony <= (14/100)*window.screen.availHeight){
+        document.getElementById('retangle' + number).style.marginLeft= 99999 + 'px';
+        completed();  }
       else  if (positiony >= (20/100)*window.screen.availHeight && positiony <= (46/100)*window.screen.availHeight){
-          alert('Not based')
+        document.getElementById('retangle' + number).style.marginLeft= 99999 + 'px';
+          delayed();
         }
       else  if (positiony >= (48/100)*window.screen.availHeight && positiony <= (74/100)*window.screen.availHeight){
-          alert('cringe')
+        document.getElementById('retangle' + number).style.marginLeft= 99999 + 'px';
+          noncompleted();
         }
     }
     break;
 
 case 3:
-      if (positionx >= (55/100)*window.screen.availWidth) {
-        if (positiony >= (1/100)*window.screen.availHeight && positiony <= (25/100)*window.screen.availHeight){
-          alert('Based! Completed!')  }
-        else  if (positiony >= (29/100)*window.screen.availHeight && positiony <= (55/100)*window.screen.availHeight){
-            alert('Not based')
+      if (positionx >= (40/100)*window.screen.availWidth) {
+        if (positiony >= (-18/100)*window.screen.availHeight && positiony <= (8/100)*window.screen.availHeight){
+          document.getElementById('retangle' + number).style.marginLeft= 99999 + 'px';
+          completed();  }
+        else  if (positiony >= (10/100)*window.screen.availHeight && positiony <= (36/100)*window.screen.availHeight){
+          document.getElementById('retangle' + number).style.marginLeft= 99999 + 'px';
+          delayed();
           }
-        else  if (positiony >= (58/100)*window.screen.availHeight && positiony <= (85/100)*window.screen.availHeight){
-            alert('cringe')
+        else  if (positiony >= (38/100)*window.screen.availHeight && positiony <= (64/100)*window.screen.availHeight){
+          document.getElementById('retangle' + number).style.marginLeft= 99999 + 'px';
+          noncompleted();
           }
       }
       break;
 
 case 4:
-            if (positionx >= (55/100)*window.screen.availWidth) {
-              if (positiony >= (1/100)*window.screen.availHeight && positiony <= (25/100)*window.screen.availHeight){
-                alert('Based! Completed!')  }
-              else  if (positiony >= (29/100)*window.screen.availHeight && positiony <= (55/100)*window.screen.availHeight){
-                  alert('Not based')
+            if (positionx >= (40/100)*window.screen.availWidth) {
+              if (positiony >= (-22/100)*window.screen.availHeight && positiony <= (4/100)*window.screen.availHeight){
+                document.getElementById('retangle' + number).style.marginLeft= 99999 + 'px';
+                completed();  }
+              else  if (positiony >= (6/100)*window.screen.availHeight && positiony <= (32/100)*window.screen.availHeight){
+                document.getElementById('retangle' + number).style.marginLeft= 99999 + 'px';
+                delayed();
                 }
-              else  if (positiony >= (58/100)*window.screen.availHeight && positiony <= (85/100)*window.screen.availHeight){
-                  alert('cringe')
-                }
+              else  if (positiony >= (34/100)*window.screen.availHeight && positiony <= (60/100)*window.screen.availHeight){
+                document.getElementById('retangle' + number).style.marginLeft= 99999 + 'px';
+                noncompleted();
+              }
             }
             break;
 case 5:
-            if (positionx >= (55/100)*window.screen.availWidth) {
-              if (positiony >= (1/100)*window.screen.availHeight && positiony <= (25/100)*window.screen.availHeight){
-                alert('Based! Completed!')  }
-              else  if (positiony >= (29/100)*window.screen.availHeight && positiony <= (55/100)*window.screen.availHeight){
-                  alert('Not based')
+            if (positionx >= (40/100)*window.screen.availWidth) {
+              if (positiony >= (-30/100)*window.screen.availHeight && positiony <= (-4/100)*window.screen.availHeight){
+                document.getElementById('retangle' + number).style.marginLeft= 99999 + 'px';
+                completed();  }
+              else  if (positiony >= (-2/100)*window.screen.availHeight && positiony <= (24/100)*window.screen.availHeight){
+                document.getElementById('retangle' + number).style.marginLeft= 99999 + 'px';
+                delayed();
                 }
-              else  if (positiony >= (58/100)*window.screen.availHeight && positiony <= (85/100)*window.screen.availHeight){
-                  alert('cringe')
+              else  if (positiony >= (26/100)*window.screen.availHeight && positiony <= (52/100)*window.screen.availHeight){
+                document.getElementById('retangle' + number).style.marginLeft= 99999 + 'px';
+                noncompleted();
                 }
                   }
                   break;
 case 6:
-              if (positionx >= (55/100)*window.screen.availWidth) {
-                if (positiony >= (1/100)*window.screen.availHeight && positiony <= (25/100)*window.screen.availHeight){
-                  alert('Based! Completed!')  }
-                else  if (positiony >= (29/100)*window.screen.availHeight && positiony <= (55/100)*window.screen.availHeight){
-                    alert('Not based')
+              if (positionx >= (40/100)*window.screen.availWidth) {
+                if (positiony >= (-38/100)*window.screen.availHeight && positiony <= (-12/100)*window.screen.availHeight){
+                  document.getElementById('retangle' + number).style.marginLeft= 99999 + 'px';
+                  completed();  }
+                else  if (positiony >= (-10/100)*window.screen.availHeight && positiony <= (16/100)*window.screen.availHeight){
+                  document.getElementById('retangle' + number).style.marginLeft= 99999 + 'px';
+                  delayed();
                   }
-                else  if (positiony >= (58/100)*window.screen.availHeight && positiony <= (85/100)*window.screen.availHeight){
-                    alert('cringe')
+                else  if (positiony >= (17/100)*window.screen.availHeight && positiony <= (43/100)*window.screen.availHeight){
+                  document.getElementById('retangle' + number).style.marginLeft= 99999 + 'px';
+                  noncompleted();
                   }
                         }
                         break;
@@ -186,14 +210,38 @@ function chamanozap(){
 
 
 function completed(){
-//todo: show a message
+var frase = Math.floor(Math.random() * 10) + 1;
+
+switch(frase){
+
+default:
+alert('gooood');
+break;
+
+}
+//todo: show a messag
 }
 function delayed(){
-//todo: show a message
+  var frase = Math.floor(Math.random() * 10) + 1;
+
+  switch(frase){
+
+  default:
+  alert('gooood');
+  break;
+}
+
 }
 
 function noncompleted(){
-//todo: show a message
+  var frase = Math.floor(Math.random() * 10) + 1;
+
+  switch(frase){
+
+  default:
+  alert('gooood');
+  break;
+}
 }
 
 
