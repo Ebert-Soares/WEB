@@ -7,9 +7,6 @@ var positionx, positiony;
 var numeroSorteado;
 
 
-alert('It had long since come to my attention that people of accomplishment rarely sat back and let things happen to them. They went out and happened to things. - Leonardo da Vinci﻿');
-
-
 function createTask(){
 if(retangleNumber == 6){
   alert("Reached maximum capacity");
