@@ -169,6 +169,8 @@ case 6:
 
 
 
+
+
 //console.log(this.position.x + ', ' + window.screen.availWidth);
 //if(number = 1 && this.position.x > (38/100)*window.screen.availWidth) {
 //  alert(x);
