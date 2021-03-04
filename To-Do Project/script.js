@@ -87,7 +87,6 @@ case 1:
       }
     else  if (positiony >= (58/100)*window.screen.availHeight && positiony <= (85/100)*window.screen.availHeight){
       document.getElementById('retangle' + number).style.marginLeft= 99999 + 'px';
-      alert('cringe');
       numeroSorteado = Math.floor(Math.random() * 10) + 1;
       noncompleted(numeroSorteado);
       }
@@ -116,16 +115,16 @@ case 2:
 
 case 3:
       if (positionx >= (40/100)*window.screen.availWidth) {
-        if (positiony >= (-18/100)*window.screen.availHeight && positiony <= (8/100)*window.screen.availHeight){
+        if (positiony >= (-24/100)*window.screen.availHeight && positiony <= (2/100)*window.screen.availHeight){
           document.getElementById('retangle' + number).style.marginLeft= 99999 + 'px';
           numeroSorteado = Math.floor(Math.random() * 10) + 1;
           completed(numeroSorteado);  }
-        else  if (positiony >= (10/100)*window.screen.availHeight && positiony <= (36/100)*window.screen.availHeight){
+        else  if (positiony >= (4/100)*window.screen.availHeight && positiony <= (30/100)*window.screen.availHeight){
           document.getElementById('retangle' + number).style.marginLeft= 99999 + 'px';
           numeroSorteado = Math.floor(Math.random() * 10) + 1;
           delayed(numeroSorteado);
           }
-        else  if (positiony >= (38/100)*window.screen.availHeight && positiony <= (64/100)*window.screen.availHeight){
+        else  if (positiony >= (32/100)*window.screen.availHeight && positiony <= (58/100)*window.screen.availHeight){
           document.getElementById('retangle' + number).style.marginLeft= 99999 + 'px';
           numeroSorteado = Math.floor(Math.random() * 10) + 1;
           noncompleted(numeroSorteado);
@@ -135,16 +134,16 @@ case 3:
 
 case 4:
             if (positionx >= (40/100)*window.screen.availWidth) {
-              if (positiony >= (-22/100)*window.screen.availHeight && positiony <= (4/100)*window.screen.availHeight){
+              if (positiony >= (-32/100)*window.screen.availHeight && positiony <= (-6/100)*window.screen.availHeight){
                 document.getElementById('retangle' + number).style.marginLeft= 99999 + 'px';
                 numeroSorteado = Math.floor(Math.random() * 10) + 1;
                 completed(numeroSorteado);  }
-              else  if (positiony >= (6/100)*window.screen.availHeight && positiony <= (32/100)*window.screen.availHeight){
+              else  if (positiony >= (-4/100)*window.screen.availHeight && positiony <= (22/100)*window.screen.availHeight){
                 document.getElementById('retangle' + number).style.marginLeft= 99999 + 'px';
                 numeroSorteado = Math.floor(Math.random() * 10) + 1;
                 delayed(numeroSorteado);
                 }
-              else  if (positiony >= (34/100)*window.screen.availHeight && positiony <= (60/100)*window.screen.availHeight){
+              else  if (positiony >= (24/100)*window.screen.availHeight && positiony <= (51/100)*window.screen.availHeight){
                 document.getElementById('retangle' + number).style.marginLeft= 99999 + 'px';
                 numeroSorteado = Math.floor(Math.random() * 10) + 1;
                 noncompleted(numeroSorteado);
@@ -153,16 +152,16 @@ case 4:
             break;
 case 5:
             if (positionx >= (40/100)*window.screen.availWidth) {
-              if (positiony >= (-30/100)*window.screen.availHeight && positiony <= (-4/100)*window.screen.availHeight){
+              if (positiony >= (-40/100)*window.screen.availHeight && positiony <= (-12/100)*window.screen.availHeight){
                 document.getElementById('retangle' + number).style.marginLeft= 99999 + 'px';
                 numeroSorteado = Math.floor(Math.random() * 10) + 1;
                 completed(numeroSorteado);  }
-              else  if (positiony >= (-2/100)*window.screen.availHeight && positiony <= (24/100)*window.screen.availHeight){
+              else  if (positiony >= (-10/100)*window.screen.availHeight && positiony <= (17/100)*window.screen.availHeight){
                 document.getElementById('retangle' + number).style.marginLeft= 99999 + 'px';
                 numeroSorteado = Math.floor(Math.random() * 10) + 1;
                 delayed(numeroSorteado);
                 }
-              else  if (positiony >= (26/100)*window.screen.availHeight && positiony <= (52/100)*window.screen.availHeight){
+              else  if (positiony >= (19/100)*window.screen.availHeight && positiony <= (46/100)*window.screen.availHeight){
                 document.getElementById('retangle' + number).style.marginLeft= 99999 + 'px';
                 numeroSorteado = Math.floor(Math.random() * 10) + 1;
                 noncompleted(numeroSorteado);
@@ -171,16 +170,16 @@ case 5:
                   break;
 case 6:
               if (positionx >= (40/100)*window.screen.availWidth) {
-                if (positiony >= (-50/100)*window.screen.availHeight && positiony <= (-12/100)*window.screen.availHeight){
+                if (positiony >= (-48/100)*window.screen.availHeight && positiony <= (-22/100)*window.screen.availHeight){
                   document.getElementById('retangle' + number).style.marginLeft= 99999 + 'px';
                   numeroSorteado = Math.floor(Math.random() * 10) + 1;
                   completed(numeroSorteado);  }
-                else  if (positiony >= (-10/100)*window.screen.availHeight && positiony <= (16/100)*window.screen.availHeight){
+                else  if (positiony >= (-20/100)*window.screen.availHeight && positiony <= (6/100)*window.screen.availHeight){
                   document.getElementById('retangle' + number).style.marginLeft= 99999 + 'px';
                   numeroSorteado = Math.floor(Math.random() * 10) + 1;
                   delayed(numeroSorteado);
                   }
-                else  if (positiony >= (17/100)*window.screen.availHeight && positiony <= (43/100)*window.screen.availHeight){
+                else  if (positiony >= (8/100)*window.screen.availHeight && positiony <= (34/100)*window.screen.availHeight){
                   document.getElementById('retangle' + number).style.marginLeft= 99999 + 'px';
                   numeroSorteado = Math.floor(Math.random() * 10) + 1;
                   noncompleted(numeroSorteado);
