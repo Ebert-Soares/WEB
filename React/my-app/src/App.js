@@ -24,16 +24,19 @@ function App() {
   const AA = "Edit and hello world.";
 
   return (
-    {list.map(item =>
-<div key={item.objectID}>
+    <div className="App">
+{list.map(item =>
+  <div>
 <span>
-<a href={item.url}>{item.title}</a>
+<a href={item.url}>{item.title + ' '}</a>
 </span>
-<span>{item.author}</span>
-<span>{item.num_comments}</span>
+<span>{item.author + ' '}</span>
+<span>{item.num_comments + ' '}</span>
 <span>{item.points}</span>
 </div>
+
 )}
+</div>
 );
 }
 
