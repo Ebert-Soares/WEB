@@ -33,7 +33,14 @@ function App() {
 <span>{item.author + ' '}</span>
 <span>{item.num_comments + ' '}</span>
 <span>{item.points}</span>
-</div>
+<span>
+<button
+onClick={() => this.onDismiss(item.objectID)}
+type="button"
+>
+Dismiss
+</button>
+</span>
 
 )}
 </div>
