@@ -1,5 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
+import React, { Component } from 'react'
+
 const list = [
 {
 title: 'React',
@@ -20,31 +22,50 @@ objectID: 1,
 ];
 
 
-function App() {
-  const AA = "Edit and hello world.";
 
-  return (
-    <div className="App">
-{list.map(item =>
-  <div>
+class App extends Component {
+  constructor(props) {
+  super(props);
+  this.state = {
+  list,
+  };
+  this.onDismiss = this.onDismiss.bind(this);
+  }
+  onDismiss(id) {
+    const isNotId = item => item.objectID !== id;
+    const updatedList = this.state.list.filter(isNotId);
+    this.setState({ list: updatedList });
+
+}
+
+
+render() {
+return (
+<div className="App">
+{this.state.list.map(item => {
+const onHandleDismiss = () =>
+this.onDismiss(item.objectID);
+return (
+<div key={item.objectID}>
 <span>
-<a href={item.url}>{item.title + ' '}</a>
+<a href={item.url}>{item.title}</a>
 </span>
-<span>{item.author + ' '}</span>
-<span>{item.num_comments + ' '}</span>
+<span>{item.author}</span>
+<span>{item.num_comments}</span>
 <span>{item.points}</span>
 <span>
 <button
-onClick={() => this.onDismiss(item.objectID)}
+onClick={onHandleDismiss}
 type="button"
 >
 Dismiss
 </button>
 </span>
-
-)}
 </div>
 );
 }
-
+)}
+</div>
+);
+}}
 export default App
