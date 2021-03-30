@@ -1,2 +1,2 @@
-const laugh = require('./importest.js')
+const laugh = require('./notes.js')
 console.log(laugh);
