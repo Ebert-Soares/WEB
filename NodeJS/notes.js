@@ -1,4 +1,3 @@
-console.log("import");
 function marcos(){
 return "yourNotes...";
 }
