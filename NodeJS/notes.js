@@ -1,5 +1,33 @@
-function marcos(){
-return "yourNotes...";
+
+const fs = require('fs');
+
+
+
+
+
+
+
+
+
+
+
+const getNotes = ()=>{
+
 }
 
-module.exports = marcos();
+
+
+
+
+
+const addNote = (title, body)=>{
+
+}
+
+
+module.exports = {
+  addNote: addNote,
+  getNotes: getNotes
+
+
+}
