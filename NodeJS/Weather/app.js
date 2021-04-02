@@ -10,8 +10,10 @@ const url = "http://apiadvisor.climatempo.com.br/api/v1/forecast/locale/8654/hou
 
 request({url: url}, (error, response) => {
   const data = JSON.parse(response.body);
-  const dataString = JSON.stringify(data);
 
-  fs.writeFileSync("data.txt", dataString);
+  console.log(data.data[14]);
+  //const dataString = JSON.stringify(data);
+
+  //fs.writeFileSync("data.txt", dataString);
 }
 )
