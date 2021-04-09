@@ -12,7 +12,7 @@ app.use(express.static(path.join(__dirname, "../public")))
 
 app.use(express.json());
 app.use(express.urlencoded());
-app.post('/myaction', function(request, response){
+app.post('/', function(request, response){
 
   const post = request.body.post;
   ap.post(post);
@@ -21,4 +21,5 @@ app.post('/myaction', function(request, response){
 
 
 
-app.listen(3000, ()=>console.log("started"))
+
+app.listen(8000, ()=>console.log("started"))
