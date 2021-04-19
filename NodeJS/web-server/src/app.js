@@ -12,7 +12,7 @@ app.use(express.static(path.join(__dirname, "../public")))
 
 app.use(express.json());
 app.use(express.urlencoded());
-app.post('/', function(request, response){
+app.post("" , function(request, response){
 
   const post = request.body.post;
   ap.post(post);
