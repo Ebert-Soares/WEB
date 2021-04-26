@@ -1,23 +1,5 @@
-const util = require("util"),
-      io = require("socket.io"),
-      _ = require("underscore"),
-      player = require("./Player.js").player;
+var io = require('socket.io')(8000);
 
-const socket, players, pendings, matches;
-
-function init(){
-  players = [];
-  pendings = [];
-  matches = {};
-
-  socket = io.listen(8000);
-  socket.set("transports", ["websocket"]);
-  scoket.set("log lever", 2);
-  setEventHandler();
-}
-
-const setEventHandler = () => {
-      socket.sockets.on("connection", onSocketConnection);
-  };
-
-init();
+io.httpServer.on('listening', function () {
+  console.log('listening on port', io.httpServer.address().port)
+})
