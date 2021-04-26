@@ -1,21 +1,39 @@
 const express = require("express");
 const app = express();
-var server = require('http').createServer(app);
+const server = require('http').createServer(app);
 const path = require('path');
-const io = require("socket.io")(server);
+const { Server } = require("socket.io");
+const io = new Server(server);
 
-var room = io.sockets.adapter.rooms['some room'];
+let users = -1;
 
 
 
 app.use(express.static(path.join(__dirname, "/src/")));
 
-server.listen(8000);
 
+io.on('connection', (socket) => {
+  if (users < 0){
+    console.log('started');
+    users++;
+    console.log(users);
+    
 
-io.on('connection', socket => {
-  socket.join('some room');
-  console.log('started');
+}
+    else{
+      users++;
+      console.log(users);
 
-  console.log(room.length);
+}
+
 });
+
+io.on('disconnect' , function () {
+      users--;
+      console.log('Got disconnect!');
+
+      console.log(users);
+
+  });
+
+server.listen(8000);
